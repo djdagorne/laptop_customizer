@@ -6,6 +6,11 @@ import slugify from 'slugify';
 
 import './App.css';
 
+//import ItemSelecter from './ItemSelecter.js'
+//import ItemList from './ItemList.js'
+//import ShoppingCart from './ShoppingCart.js'
+//import CartTotal from './CartTotal.js'
+
 // This object will allow us to
 // easily convert numbers into US dollar values
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
