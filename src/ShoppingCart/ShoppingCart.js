@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CartTotal from '../CartTotal/CartTotal.js'
+import CartTotal from './CartTotal.js'
 
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
   style: 'currency',

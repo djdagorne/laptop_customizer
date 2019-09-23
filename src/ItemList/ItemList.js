@@ -1,18 +1,20 @@
 import React from 'react'
 import slugify from 'slugify';
-import ItemSelecter from '../ItemSelecter/ItemSelecter.js'
+import ItemSelecter from './ItemSelecter.js'
 
 export default class ItemList extends React.Component{
     render(){
-        const itemList = Object.keys(this.props.features).map((feature, idx) => {
+        const itemList = Object.keys(this.props.features).map((feature, index) => {
             return (
                 <ItemSelecter 
-                    key={idx}
+                    key={index}
                     feature={feature}
-                    idx={idx}
-                    featureHash={feature+'-'+idx}
+                    index={index}
+                    featureHash={feature+'-'+index}
+
                     features={this.props.features}
                     selected={this.props.selected}
+
                     updateFeature={this.props.updateFeature}
                 />
             )
