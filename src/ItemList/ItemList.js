@@ -1,5 +1,5 @@
 import React from 'react'
-import slugify from 'slugify';
+
 import ItemSelecter from './ItemSelecter.js'
 
 export default class ItemList extends React.Component{
